@@ -1,0 +1,134 @@
+
+# Most Important Things to Practice
+
+# Practice these daily:
+
+# Creating lists
+# Indexing
+# append()
+# remove()
+# pop()
+# Loops with lists
+# Slicing
+# Sorting
+# Nested lists
+# List comprehension
+
+
+# Creating a List
+
+numbers = [10, 20, 30, 40]
+
+print(numbers)
+
+# List Can Store Different Data Types
+
+data = [10, "Sai", True, 55.5]
+
+print(data)
+
+# Accessing List Values (Index)
+
+fruits = ["Apple", "Mango", "Orange"]
+
+print(fruits[0])
+print(fruits[1])
+
+# Negative Indexing
+
+fruits = ["Apple", "Mango", "Orange"]
+
+print(fruits[-1])
+
+# Changing Values
+
+fruits = ["Apple", "Mango", "Orange"]
+
+fruits[1] = "Banana"
+
+print(fruits)
+
+# Adding Values
+
+fruits = ["Apple"]
+
+fruits.append("Mango")
+
+print(fruits)
+
+# insert()
+
+fruits = ["Apple", "Orange"]
+
+fruits.insert(1, "Mango")
+
+print(fruits)
+
+# Removing Values
+
+fruits = ["Apple", "Mango", "Orange"]
+
+fruits.remove("Mango")
+
+print(fruits)
+
+# pop()
+
+fruits = ["Apple", "Mango", "Orange"]
+
+fruits.pop(1)
+
+print(fruits)
+
+# Finding Length
+
+fruits = ["Apple", "Mango", "Orange"]
+
+print(len(fruits))
+
+# Check Item Exists
+
+fruits = ["Apple", "Mango"]
+
+print("Apple" in fruits)
+
+# List Slicing
+
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[1:4])
+
+# Reverse List
+
+numbers = [1, 2, 3]
+
+numbers.reverse()
+
+print(numbers)
+
+# Sort List
+
+numbers = [5, 2, 8, 1]
+
+numbers.sort()
+
+print(numbers)
+
+# Copy List
+
+a = [1, 2, 3]
+
+b = a.copy()
+
+print(b)
+
+# Nested List
+
+data = [
+    [1, 2],
+    [3, 4]
+]
+
+print(data[0][1])
+
+
