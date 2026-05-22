@@ -1,0 +1,69 @@
+1. Arithmetic Operators
+
+Used for mathematical calculations.
+
++ (Addition) → a + b
+- (Subtraction) → a - b
+* (Multiplication) → a * b
+/ (Division) → a / b
+% (Modulus) → a % b (remainder)
+** (Exponent) → a ** b (power)
+// (Floor Division) → a // b (rounds down)
+
+
+2. Comparison (Relational) Operators
+
+Used to compare values (result is True or False).
+
+== (Equal to)
+!= (Not equal to)
+> (Greater than)
+< (Less than)
+>= (Greater than or equal to)
+<= (Less than or equal to)
+3. Logical Operators
+
+Used to combine conditional statements.
+
+and → True if both conditions are true
+or → True if at least one condition is true
+not → Reverses the result
+
+
+4. Assignment Operators
+
+Used to assign values to variables.
+
+= → x = 5
++= → x += 3 (same as x = x + 3)
+-= → x -= 3
+*= → x *= 3
+/= → x /= 3
+%= → x %= 3
+//= → x //= 3
+**= → x **= 3
+
+
+
+5. Identity Operators
+
+Used to compare memory locations.
+
+is → True if both variables refer to the same object
+is not → True if they don’t
+6. Membership Operators
+
+Used to test if a value exists in a sequence.
+
+in → True if value is present
+not in → True if value is not present
+7. Bitwise Operators
+
+Work on binary (bits) of numbers.
+
+& (AND)
+| (OR)
+^ (XOR)
+~ (NOT)
+<< (Left shift)
+>> (Right shift)
