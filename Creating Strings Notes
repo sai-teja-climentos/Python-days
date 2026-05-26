@@ -1,0 +1,78 @@
+Working with Strings in Python
+
+Strings in Python are sequences of characters used to represent text.
+You can create strings using:
+
+Single quotes ' '
+Double quotes " "
+Triple quotes ''' ''' or """ """
+
+String Characteristics
+1. Strings are Immutable
+
+Once a string is created, its value cannot be changed directly.
+
+text = "Hello"
+
+# text[0] = "Y"   Error
+
+Instead, create a new string:
+
+text = "Y" + text[1:]
+print(text)
+
+Output:
+
+Yello
+
+String Slicing
+
+Slicing is used to extract part of a string.
+
+Syntax:
+
+String Concatenation
+
+Joining strings using +
+
+
+Repeating Strings
+
+Using * operator
+
+
+# upper()
+
+# Converts text to uppercase.
+
+# lower()
+
+# Converts text to lowercase.
+
+# strip()
+
+# Removes spaces from beginning and end.
+replace()
+
+split()
+
+Splits string into a list.
+
+find()
+
+Finds position of a substring.
+# startswith() and endswith()
+
+# String Formatting
+
+# Using f-strings
+| Escape | Meaning      |
+| ------ | ------------ |
+| `\n`   | New line     |
+| `\t`   | Tab space    |
+| `\\`   | Backslash    |
+| `\"`   | Double quote |
+
+
+# Checking String Properties
+Length of a String
