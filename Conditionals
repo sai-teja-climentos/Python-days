@@ -1,228 +1,228 @@
-Conditional Statements in Python — Notes
-What are Conditional Statements?
+# Conditional Statements in Python — Notes
+# What are Conditional Statements?
 
-Conditional statements are used to make decisions in Python programs.
+# Conditional statements are used to make decisions in Python programs.
 
-They execute different blocks of code based on whether a condition is:
+# They execute different blocks of code based on whether a condition is:
 
-True
-False
-Types of Conditional Statements
-1. if Statement
+# True
+# False
+# Types of Conditional Statements
+# 1. if Statement
 
-Used to execute code only when a condition is true.
+# Used to execute code only when a condition is true.
 
-Syntax
-if condition:
-    statement
-Example
-age = 18
+# Syntax
+# if condition:
+#     statement
+# Example
+# age = 18
 
-if age >= 18:
-    print("Eligible to vote")
-2. if-else Statement
+# if age >= 18:
+#     print("Eligible to vote")
+# 2. if-else Statement
 
-Used when there are two possible outcomes.
+# Used when there are two possible outcomes.
 
-Syntax
-if condition:
-    statement
-else:
-    statement
-Example
-number = 5
+# Syntax
+# if condition:
+#     statement
+# else:
+#     statement
+# Example
+# number = 5
 
-if number % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
-3. if-elif-else Statement
+# if number % 2 == 0:
+#     print("Even")
+# else:
+#     print("Odd")
+# 3. if-elif-else Statement
 
-Used to check multiple conditions.
+# Used to check multiple conditions.
 
-Syntax
-if condition:
-    statement
-elif condition:
-    statement
-else:
-    statement
-Example
-marks = 85
+# Syntax
+# if condition:
+#     statement
+# elif condition:
+#     statement
+# else:
+#     statement
+# Example
+# marks = 85
 
-if marks >= 90:
-    print("Grade A")
-elif marks >= 70:
-    print("Grade B")
-elif marks >= 50:
-    print("Grade C")
-else:
-    print("Fail")
-4. match-case Statement
+# if marks >= 90:
+#     print("Grade A")
+# elif marks >= 70:
+#     print("Grade B")
+# elif marks >= 50:
+#     print("Grade C")
+# else:
+#     print("Fail")
+# 4. match-case Statement
 
-Introduced in Python 3.10.
+# Introduced in Python 3.10.
 
-Used for pattern matching.
+# Used for pattern matching.
 
-Syntax
-match variable:
-    case value:
-        statement
-Example
-day = 2
+# Syntax
+# match variable:
+#     case value:
+#         statement
+# Example
+# day = 2
 
-match day:
-    case 1:
-        print("Monday")
-    case 2:
-        print("Tuesday")
-    case 3:
-        print("Wednesday")
-    case _:
-        print("Invalid Day")
-Comparison Operators
-Operator	Meaning
-==	Equal to
-!=	Not equal to
->	Greater than
-<	Less than
->=	Greater than or equal
-<=	Less than or equal
-Logical Operators
-Operator	Meaning
-and	Both conditions must be true
-or	At least one condition must be true
-not	Reverses the condition
-Example
-age = 25
+# match day:
+#     case 1:
+#         print("Monday")
+#     case 2:
+#         print("Tuesday")
+#     case 3:
+#         print("Wednesday")
+#     case _:
+#         print("Invalid Day")
+# Comparison Operators
+# Operator	Meaning
+# ==	Equal to
+# !=	Not equal to
+# >	Greater than
+# <	Less than
+# >=	Greater than or equal
+# <=	Less than or equal
+# Logical Operators
+# Operator	Meaning
+# and	Both conditions must be true
+# or	At least one condition must be true
+# not	Reverses the condition
+# Example
+# age = 25
 
-if age >= 18 and age <= 60:
-    print("Working Age")
-Important Points
-Indentation is important in Python.
-Conditions return either True or False.
-elif means “else if”.
-match-case works like switch statements in other languages.
-Short Summary
-Statement	Purpose
-if	Checks one condition
-if-else	Checks two outcomes
-if-elif-else	Checks multiple conditions
-match-case	Pattern matching
-
-
+# if age >= 18 and age <= 60:
+#     print("Working Age")
+# Important Points
+# Indentation is important in Python.
+# Conditions return either True or False.
+# elif means “else if”.
+# match-case works like switch statements in other languages.
+# Short Summary
+# Statement	Purpose
+# if	Checks one condition
+# if-else	Checks two outcomes
+# if-elif-else	Checks multiple conditions
+# match-case	Pattern matching
 
 
-What are Loops?
 
-Loops are used to execute a block of code repeatedly.
 
-Types of Loops in Python
-1. for Loop
+# What are Loops?
 
-Used when the number of iterations is known.
+# Loops are used to execute a block of code repeatedly.
 
-Syntax
-for variable in sequence:
-    # code
-Example
-for i in range(5):
-    print(i)
-Output
-0
-1
-2
-3
-4
-2. while Loop
+# Types of Loops in Python
+# 1. for Loop
 
-Used when repetition depends on a condition.
+# Used when the number of iterations is known.
 
-Syntax
-while condition:
-    # code
-Example
-i = 1
+# Syntax
+# for variable in sequence:
+#     # code
+# Example
+# for i in range(5):
+#     print(i)
+# Output
+# 0
+# 1
+# 2
+# 3
+# 4
+# 2. while Loop
 
-while i <= 5:
-    print(i)
-    i += 1
-Output
-1
-2
-3
-4
-5
-range() Function
+# Used when repetition depends on a condition.
 
-Used to generate a sequence of numbers.
+# Syntax
+# while condition:
+#     # code
+# Example
+# i = 1
 
-Example
-range(5)
+# while i <= 5:
+#     print(i)
+#     i += 1
+# Output
+# 1
+# 2
+# 3
+# 4
+# 5
+# range() Function
 
-Produces:
+# Used to generate a sequence of numbers.
 
-0, 1, 2, 3, 4
-Increment in Python
+# Example
+# range(5)
 
-Python does NOT support:
+# Produces:
 
-❌ Invalid
+# 0, 1, 2, 3, 4
+# Increment in Python
 
-i++
+# Python does NOT support:
 
-✅ Correct
+# ❌ Invalid
 
-i += 1
-Common Errors
-❌ Invalid
-for i in i++:
+# i++
 
-Reason:
+# ✅ Correct
 
-i++ is not supported in Python.
-❌ Invalid
-for i in i += 1:
+# i += 1
+# Common Errors
+# ❌ Invalid
+# for i in i++:
 
-Reason:
+# Reason:
 
-i += 1 is not an iterable.
-Loop Control Statements
-break
+# i++ is not supported in Python.
+# ❌ Invalid
+# for i in i += 1:
 
-Stops the loop.
+# Reason:
 
-for i in range(5):
-    if i == 3:
-        break
-    print(i)
-continue
+# i += 1 is not an iterable.
+# Loop Control Statements
+# break
 
-Skips the current iteration.
+# Stops the loop.
 
-for i in range(5):
-    if i == 2:
-        continue
-    print(i)
-pass
+# for i in range(5):
+#     if i == 3:
+#         break
+#     print(i)
+# continue
 
-Does nothing.
+# Skips the current iteration.
 
-for i in range(5):
-    pass
-Nested Loop
+# for i in range(5):
+#     if i == 2:
+#         continue
+#     print(i)
+# pass
 
-Loop inside another loop.
+# Does nothing.
 
-for i in range(2):
-    for j in range(3):
-        print(i, j)
-Infinite Loop
-while True:
-    print("Running")
-Important Points
-for loop → fixed iterations
-while loop → condition-based
-Python uses indentation
-i += 1 is used for increment
-i++ is not valid in Python
+# for i in range(5):
+#     pass
+# Nested Loop
+
+# Loop inside another loop.
+
+# for i in range(2):
+#     for j in range(3):
+#         print(i, j)
+# Infinite Loop
+# while True:
+#     print("Running")
+# Important Points
+# for loop → fixed iterations
+# while loop → condition-based
+# Python uses indentation
+# i += 1 is used for increment
+# i++ is not valid in Python

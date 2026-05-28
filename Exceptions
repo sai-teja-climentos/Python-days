@@ -1,0 +1,170 @@
+# Exceptions in Python Notes
+
+## What are Exceptions?
+
+Exceptions are runtime errors that occur during program execution in Python.
+
+Python uses exception handling to prevent the program from crashing.
+
+---
+
+# Exception Handling Keywords
+
+| Keyword   | Purpose                         |
+| --------- | ------------------------------- |
+| `try`     | Contains risky code             |
+| `except`  | Handles the error               |
+| `else`    | Executes if no exception occurs |
+| `finally` | Always executes                 |
+
+---
+
+# Basic Syntax
+
+```python
+try:
+    # risky code
+
+except:
+    # error handling code
+```
+
+---
+
+# Example
+
+```python
+try:
+    a = 10
+    b = 0
+
+    print(a / b)
+
+except:
+    print("Error occurred")
+```
+
+### Output
+
+```python
+Error occurred
+```
+
+---
+
+# Common Exceptions
+
+| Exception           | Description            |
+| ------------------- | ---------------------- |
+| `ZeroDivisionError` | Division by zero       |
+| `ValueError`        | Invalid value          |
+| `TypeError`         | Wrong data type        |
+| `IndexError`        | Invalid list index     |
+| `KeyError`          | Missing dictionary key |
+| `FileNotFoundError` | File not found         |
+
+---
+
+# Specific Exception Handling
+
+```python
+try:
+    num = int("hello")
+
+except ValueError:
+    print("Invalid value")
+```
+
+---
+
+# Multiple Except Blocks
+
+```python
+try:
+    a = 10
+    b = 0
+
+    print(a / b)
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+except ValueError:
+    print("Value error")
+```
+
+---
+
+# else Block
+
+Runs only when no exception occurs.
+
+```python
+try:
+    print(10 / 2)
+
+except:
+    print("Error")
+
+else:
+    print("No exception")
+```
+
+---
+
+# finally Block
+
+Always executes whether error occurs or not.
+
+```python
+try:
+    print(10 / 2)
+
+except:
+    print("Error")
+
+finally:
+    print("Execution completed")
+```
+
+---
+
+# Complete Example
+
+```python
+try:
+    num = int(input("Enter number: "))
+    print(100 / num)
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+except ValueError:
+    print("Enter valid number")
+
+else:
+    print("Program executed successfully")
+
+finally:
+    print("Program ended")
+```
+
+---
+
+# Advantages of Exception Handling
+
+* Prevents program crashes
+* Improves reliability
+* Handles unexpected errors
+* Improves user experience
+* Easier debugging
+
+---
+
+# Important Points
+
+* `try` block contains risky code
+* `except` handles errors
+* `else` executes when no error occurs
+* `finally` always executes
+* Multiple `except` blocks are allowed

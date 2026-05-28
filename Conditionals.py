@@ -99,10 +99,51 @@ i=1
 #     print(i)
 
 
-for i in range(10):
-    if i == 5:
-        break
-    print(i)
+# for i in range(10):
+#     if i == 5:
+#         break
+#     print(i)
+
+
+
+
+# continue
+
+# for i in range(10):
+#     if i == 5:
+#         continue
+#     print(i)
+
+
+
+# pass
+# Does nothing. Placeholder statement.
+# for i in range(10):
+#  pass 
+
+
+# for i in range(3):
+#     for j in range(2):
+#         print(i,j)
+
+# Looping Through Lists
+
+# Database = ["Phone","Apple","Pen","Box","Bag"]
+
+
+# for Data in Database:
+#     print(Data)
+
+
+# i = 0
+
+# while True:
+#     print(i)
+#     i += 1
+
+#     if i > 5:
+#         break
+
 
 
 
